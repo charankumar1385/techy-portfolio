@@ -4,6 +4,7 @@ import { FaLinkedin, FaGithub, FaEnvelope, FaFileAlt, FaTimes } from "react-icon
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Projects from "./components/Projects"; 
+import DashboardUpload from "./components/DashboardUpload";
 
 export default function Portfolio() {
   const [showModal, setShowModal] = useState(false);
@@ -190,8 +191,13 @@ export default function Portfolio() {
       My Projects
     </motion.h3>
 
-    {/* Firebase upload component */}
+    {/* Project cards */}
     <Projects />
+
+    {/* Dashboard Upload component */}
+    <div className="mt-16">
+      <DashboardUpload />
+    </div>
   </div>
 </section>
 
